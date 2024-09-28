@@ -17,7 +17,7 @@ routes.get('/getgender', async (req, res) => {
 
 routes.get('/accountbadboy', async (req, res) => {
     badboys++
-    res.status(200);
+    res.json({sucess: true});
 })
 routes.get('/getnumbadboy', async (req, res) => {
     res.json({ numbad: badboys});
